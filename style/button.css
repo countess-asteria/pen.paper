@@ -18,7 +18,7 @@ div[class*=box] {
     transition: all 0.3s;
     position: relative;
 }
-.btn-one span {
+.btn-one {
     transition: all 0.3s;
 }
 .btn-one::before {
@@ -39,7 +39,7 @@ div[class*=box] {
     border-bottom-color: rgba(255,255,255,0.5);
     transform: scale(0.1, 1);
 }
-.btn-one:hover span {
+.btn-one:hover {
     letter-spacing: 2px;
 }
 .btn-one:hover::before {
@@ -60,4 +60,19 @@ div[class*=box] {
 .btn-one:hover::after {
     opacity: 0;
     transform: scale(0.1, 1);
+}
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:active {
+    text-decoration: none;
 }
