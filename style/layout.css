@@ -42,9 +42,9 @@ h1{
     "player playerContent"
     "birthdate birthdateContent"
     "age ageContent"
-    "gender genderContent"
     "home homeContent"
-    "birthplace birthContent";
+    "birthplace birthContent"
+    "gender genderContent";
 }
 .name { grid-area: name; }
 .nameContent { grid-area: nameContent; }
@@ -107,4 +107,63 @@ li.menu_list:hover a.side {
 }
 li.menu_list:hover .front {
     transform: rotateY(90deg);
+}
+.genderContent{
+    width: 200px;
+    position: relative;
+}
+.genderContent::before{
+    font-family: fontello;
+    content: "\02C5";
+    font-size: 20px;
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    pointer-events: none;
+}
+select {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    border: none;
+    width: 100%;
+    height: 40px;
+    -moz-padding-start: calc(10px - 3px);
+    padding-left: 10px;
+    background: url(../images/1x1.png) repeat;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    box-shadow: 2px 2px 5px 1px rgba(0,0,0,0.3);
+    border-radius: 3px;
+    outline: none;
+    cursor: pointer;
+}
+select::-ms-expand {
+    display: none;
+}
+select option {
+    color: #FFFFFF;
+    background-color: #081c15;
+    border: none;
+}
+select:hover{
+    background-color: #081c15;
+}
+select:focus::-ms-value {
+    background-color: transparent;
+}
+textarea {
+    outline: none;
+    background-color: #2d6a4f;
+    color: #FFFFFF;
+    font-family: "Yu Gothic Light";
+    resize: none;
+    box-shadow: 2px 2px 5px 1px black;
+}
+input {
+    background-color: #2d6a4f;
+    color: #FFFFFF;
+    width: auto;
+    font-family: "Yu Gothic Light";
 }
